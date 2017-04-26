@@ -1,18 +1,25 @@
-<hr>
-  <div class="row">
-      <div class="col-xs-12">
-          <footer>
-              <p class="text-center">
-                &copy; Copyright
-                <a href="http://www.apache.org">The Apache Software Foundation</a>,
-                {{ 'now' | date: "%Y" }}. All Rights Reserved.
-              </p>
-              <p class="text-center">
-                <a href="{{ site.baseurl }}/privacy_policy">Privacy Policy</a> |
-                <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
-              </p>
-          </footer>
+<footer class="footer">
+  <div class="footer__contained">
+    <div class="footer__cols">
+      <div class="footer__cols__col">
       </div>
+      <div class="footer__cols__col">
+      </div>
+      <div class="footer__cols__col">
+      </div>
+      <div class="footer__cols__col">
+      </div>
+      <div class="footer__cols__col">
+        <div>
+          <a href="{{ site.baseurl }}/privacy_policy">Privacy Policy</a> |
+        </div>
+        <div>
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- container div end -->
-</div>
+  <div class="footer__bottom">
+    &copy; <a href="http://www.apache.org">The Apache Software Foundation</a>
+  </div>
+</footer>

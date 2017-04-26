@@ -1,0 +1,78 @@
+.hero
+  background-image: url(../images/hero_bg.svg)
+  background-size: contain
+  background-position: top
+  background-repeat: no-repeat
+  margin-bottom: $pad*2
+  padding-top: 40px
+  +md
+    padding-top: 100px
+
+  .hero__title
+    +type-h1
+    max-width: 500px
+    margin-bottom: $pad
+    font-weight: $font-weight-bold
+
+  .hero__subtitle
+    +type-h3
+    color: #fff
+    max-width: 500px
+    margin-bottom: $pad*2
+    font-weight: $font-weight-bold
+
+  .hero__ctas
+
+  .hero__blog
+    .hero__blog__title
+      +type-h4
+      color: #fff
+      font-weight: $font-weight-semibold
+      margin-bottom: $pad/2
+
+  .hero__blog__cards
+    +md
+      display: flex
+      margin: 0 -10px
+
+    .hero__blog__cards__card
+      margin: 0 10px
+      background-color: #fff
+      color: inherit
+      box-shadow: $box-shadow
+      padding: $pad
+      display: block
+      transition: transform 300ms ease
+      position: relative
+
+      &:before
+        background-image: url(../images/card_border.svg)
+        background-position: top
+        background-repeat: no-repeat
+        background-size: cover
+        content: ' '
+        display: block
+        height: 3px
+        position: absolute
+        width: 100%
+        left: 0
+        top: 0
+
+      &:hover
+        text-decoration: none
+        transform: translateY(-8px)
+
+    .hero__blog__cards__card__title
+      +type-body
+      margin-bottom: $pad
+
+    .hero__blog__cards__card__date
+      +type-body
+      font-weight: $font-weight-semibold
+
+  .hero__cols
+    +md
+      display: flex
+
+    .hero__cols__col
+      width: 50%

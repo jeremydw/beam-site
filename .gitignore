@@ -9,3 +9,4 @@ vendor/
 *.iml
 *.ipr
 *.iws
+.DS_Store

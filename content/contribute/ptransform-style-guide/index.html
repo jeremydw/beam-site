@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>PTransform Style Guide</title>
   <meta name="description" content="Apache Beam is an open source, unified model and set of language-specific SDKs for defining and executing data processing workflows, and also data ingestion and integration flows, supporting Enterprise Integration Patterns (EIPs) and Domain Specific Languages (DSLs). Dataflow pipelines simplify the mechanics of large-scale batch and streaming data processing and can run on a number of runtimes like Apache Flink, Apache Spark, and Google Cloud Dataflow (a cloud service). Beam also brings DSL in different languages, allowing users to easily implement their data integration processes.
 ">
-
-  <link rel="stylesheet" href="/styles/site.css">
-  <link rel="stylesheet" href="/css/theme.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/language-switch.js"></script>
   <link rel="canonical" href="https://beam.apache.org/contribute/ptransform-style-guide/" data-proofer-ignore>
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Apache Beam" href="https://beam.apache.org/feed.xml">
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-73650088-1', 'auto');
     ga('send', 'pageview');
-
   </script>
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
-
-  <body role="document">
-
+  <body class="body">
     <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -147,11 +140,8 @@
 
 <link rel="stylesheet" href="">
 
-
-    <div class="container" role="main">
-
-      <div class="row">
-        <h1 id="ptransform-style-guide">PTransform Style Guide</h1>
+    <div class="body__contained">
+      <h1 id="ptransform-style-guide">PTransform Style Guide</h1>
 
 <p><em>A style guide for writers of new reusable PTransforms.</em></p>
 
@@ -737,29 +727,27 @@ Strive to make such incompatible behavior changes cause a compile error (e.g. it
   <li>In general, any transform that outputs a user-controlled type (that is not its input type) needs to accept a coder in the transform configuration (example: the <code class="highlighter-rouge">Create.of()</code> transform). This gives the user the ability to control the coder no matter how the transform is structured: e.g., purely letting the user specify the coder on the output <code class="highlighter-rouge">PCollection</code> of the transform is insufficient in case the transform internally uses intermediate <code class="highlighter-rouge">PCollection</code>s of this type.</li>
 </ul>
 
-      </div>
-
-
-    <hr>
-  <div class="row">
-      <div class="col-xs-12">
-          <footer>
-              <p class="text-center">
-                &copy; Copyright
-                <a href="http://www.apache.org">The Apache Software Foundation</a>,
-                2017. All Rights Reserved.
-              </p>
-              <p class="text-center">
-                <a href="/privacy_policy">Privacy Policy</a> |
-                <a href="/feed.xml">RSS Feed</a>
-              </p>
-          </footer>
-      </div>
+    </div>
+    <footer class="footer">
+  <div class="footer__cols">
+    <div class="footer__cols__col">
+    </div>
+    <div class="footer__cols__col">
+    </div>
+    <div class="footer__cols__col">
+    </div>
+    <div class="footer__cols__col">
+    </div>
+    <div class="footer__cols__col">
+    </div>
   </div>
-  <!-- container div end -->
-</div>
-
+  <div class="footer__bottom">
+    &copy; <a href="http://www.apache.org">The Apache Software Foundation</a>
+  </div>
+  <p class="text-center">
+  <a href="/privacy_policy">Privacy Policy</a> |
+  <a href="/feed.xml">RSS Feed</a>
+</footer>
 
   </body>
-
 </html>

@@ -1,0 +1,43 @@
+.cards
+  background-image: url(../images/cards_bg.svg)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: top
+  text-align: center
+  margin-bottom: $pad*2
+
+  .cards__title
+    +type-h2
+    color: #fff
+    margin-bottom: $pad
+    margin-top: $pad
+
+  .cards__cards
+    margin-bottom: $pad
+    +md
+      display: flex
+      justify-content: center
+
+    .cards__cards__card
+      background: #fff
+      box-shadow: $box-shadow
+      margin: 0 $pad/2
+      padding: $pad*1.5
+
+    .cards__cards__card__body
+      margin-bottom: $pad
+      +type-h3
+
+    .cards__cards__card__user
+      display: flex
+      justify-content: center
+      align-items: center
+
+      .cards__cards__card__user__icon
+        border-radius: 100%
+        background: #efefef
+        width: 40px
+        height: 40px
+
+      .cards__cards__card__user__name
+        margin-left: $pad/2

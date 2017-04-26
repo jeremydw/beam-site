@@ -1,0 +1,27 @@
+.button
+  -webkit-transition: background-color 0.3s
+  background-color: #fff
+  border-radius: 5px
+  box-shadow: $box-shadow
+  cursor: pointer
+  display: inline-block
+  font-weight: $font-weight-semibold
+  padding: 13px 20px
+  position: relative
+  text-decoration: none
+  letter-spacing: 1px
+  text-transform: uppercase
+  transition: background-color 0.3s
+  color: $color-dark
+
+  &--primary
+    background-color: $color-brand
+    color: #fff
+    &:hover
+      color: #fff
+
+  &:hover
+    text-decoration: none
+
+  & + .button
+    margin-left: $pad / 2
