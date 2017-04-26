@@ -10,3 +10,5 @@ task :test do
     :file_ignore => [/javadoc/, /v2/, /pydoc/]
     }).run
 end
+
+task :default => :test
