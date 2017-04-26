@@ -11,4 +11,5 @@ task :test do
     }).run
 end
 
-task :default => :test
+task :default do
+end
