@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- node
+cache:
+  directories:
+  - node_modules
+  - $(npm config get prefix)/bin/firebase
+  - /home/travis/.nvm/versions/node/v7.2.0/lib/node_modules
+  - $HOME/.cache/pip
+  - /home/travis/.local/bin
+install:
+- gem install bundler
+- bundle install --deployment
+- npm install -g firebase-tools
+script:
+- firebase use staging
+- grow build
+after_success:
+- firebase deploy --token "$FIREBASE_TOKEN"
+env:
+  global:
+    secure: "td6BMS/prsV2R0o6ZAsbH10BJ2uUhMm4Cv4YlekZgZIFR7Vk+2mZyIBWUTnXhjRUIEt6vEZILgYnrzqGymwFG4wa2qJaaQfPZtyY7hc9cLqu/Rs8sA8WV0ZN+gGxaHsietjDeYHrPGetM93jxBL09oVG+yECIkHs9wdbZ8XFdAM16iBL1HpDEQfCvRynJZQ6T1RYGJFu3gXt4SKo9waVuC8ksqW2CuzG+8HT29mhj/TcWkjUVXxI7/c1c4666XbfCYW5sFqjxG51q7INzefmBRXNPmnJBMY/vkqpGfpVzNx1uubNGSKC1e9qsqOgXcHavz9+mIrAYZXibD6Lv0B/eGQ4X2AeruKxg2iLtsANQQ5QHVBc4CNulPn9z+ZF0XBIrp5H5iyFuD26x4wsq56p+JEQMq4XrRYdtEUTs5P2uotiRD0+RNY3WpVSGyPPlj38MV3N6mSFoOmEXVOvEc589wM8qNNpC8KtF8hu8d2M18K2VBV8I3DnhWxuXUCZWdiXfqxHBXz2XhMAB4po3RPPyy6xBXVkuUoJvNrxiOV8mMTzfkMsjNY4yAbbpF1SukwV9or7QVvuOMZs2FSz5avm3uIVWK6389WnlhAzg8xf/IUsdgCyCNYxPO09phnTK8sCz8dLAAr+HKlqm6GYgQdWYj1ikdHxA53JtFWufOXeYwE="
