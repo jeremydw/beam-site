@@ -1,18 +1,11 @@
 language: ruby
 rvm:
 - 2.2
-#node_js:
-#- node
 install:
 - gem install bundler
 - bundle install --deployment
-#- rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install 7.0.0
-#- npm update
-#env:
-#  global:
 
 deploy:
   provider: firebase
-	project: apache-beam
-	token:
+  token:
     secure: "td6BMS/prsV2R0o6ZAsbH10BJ2uUhMm4Cv4YlekZgZIFR7Vk+2mZyIBWUTnXhjRUIEt6vEZILgYnrzqGymwFG4wa2qJaaQfPZtyY7hc9cLqu/Rs8sA8WV0ZN+gGxaHsietjDeYHrPGetM93jxBL09oVG+yECIkHs9wdbZ8XFdAM16iBL1HpDEQfCvRynJZQ6T1RYGJFu3gXt4SKo9waVuC8ksqW2CuzG+8HT29mhj/TcWkjUVXxI7/c1c4666XbfCYW5sFqjxG51q7INzefmBRXNPmnJBMY/vkqpGfpVzNx1uubNGSKC1e9qsqOgXcHavz9+mIrAYZXibD6Lv0B/eGQ4X2AeruKxg2iLtsANQQ5QHVBc4CNulPn9z+ZF0XBIrp5H5iyFuD26x4wsq56p+JEQMq4XrRYdtEUTs5P2uotiRD0+RNY3WpVSGyPPlj38MV3N6mSFoOmEXVOvEc589wM8qNNpC8KtF8hu8d2M18K2VBV8I3DnhWxuXUCZWdiXfqxHBXz2XhMAB4po3RPPyy6xBXVkuUoJvNrxiOV8mMTzfkMsjNY4yAbbpF1SukwV9or7QVvuOMZs2FSz5avm3uIVWK6389WnlhAzg8xf/IUsdgCyCNYxPO09phnTK8sCz8dLAAr+HKlqm6GYgQdWYj1ikdHxA53JtFWufOXeYwE="
