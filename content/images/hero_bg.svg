@@ -1,30 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1280px" height="625px" viewBox="0 0 1280 625" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 6</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
-            <stop stop-color="#FBDA61" offset="0%"></stop>
-            <stop stop-color="#F76B1C" offset="100%"></stop>
-        </linearGradient>
-        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-2">
-            <stop stop-color="#FBDA61" stop-opacity="0" offset="0%"></stop>
-            <stop stop-color="#F76B1C" offset="100%"></stop>
-        </linearGradient>
-        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-3">
-            <stop stop-color="#FBDA61" offset="0%"></stop>
-            <stop stop-color="#F9B248" stop-opacity="0.637773198" offset="36.2226802%"></stop>
-            <stop stop-color="#F76B1C" stop-opacity="0" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Design---Desktop-Landscape">
-            <g id="Group-6">
-                <polygon id="Rectangle" fill="url(#linearGradient-1)" points="0 0 1280 0 1280 429 0 625"></polygon>
-                <polygon id="Rectangle" fill="url(#linearGradient-2)" opacity="0.342617754" style="mix-blend-mode: multiply;" points="357 495 1637 299 1637 429 357 625"></polygon>
-                <polygon id="Rectangle" fill="url(#linearGradient-3)" opacity="0.41796875" style="mix-blend-mode: multiply;" points="0 495 1280 299 1280 429 0 625"></polygon>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="334 84 1280 625" style="enable-background:new 334 84 1280 625;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Rectangle_1_);}
+	.st1{opacity:0.418;fill:url(#Rectangle_3_);enable-background:new    ;}
+	.st2{opacity:0.3426;fill:url(#SVGID_1_);enable-background:new    ;}
+</style>
+<title>Group 6</title>
+<desc>Created with Sketch.</desc>
+<g id="Group-6">
+	
+		<linearGradient id="Rectangle_1_" gradientUnits="userSpaceOnUse" x1="667.6606" y1="791.9456" x2="668.6606" y2="792.9456" gradientTransform="matrix(1280 0 0 -625 -854372 495626)">
+		<stop  offset="0" style="stop-color:#FBDA61"/>
+		<stop  offset="1" style="stop-color:#F76B1C"/>
+	</linearGradient>
+	<polygon id="Rectangle" class="st0" points="334,84 1614,84 1614,513 334,709 	"/>
+	
+		<linearGradient id="Rectangle_3_" gradientUnits="userSpaceOnUse" x1="667.7391" y1="791.7454" x2="668.7391" y2="792.7454" gradientTransform="matrix(1280 0 0 -326 -854372 258818)">
+		<stop  offset="0" style="stop-color:#FBDA61"/>
+		<stop  offset="0.3622" style="stop-color:#F9B248;stop-opacity:0.6378"/>
+		<stop  offset="1" style="stop-color:#F76B1C;stop-opacity:0"/>
+	</linearGradient>
+	<polygon id="Rectangle_2_" class="st1" points="334,579 1614,383 1614,513 334,709 	"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="924.5836" y1="345.4164" x2="1380.4164" y2="801.2493">
+		<stop  offset="0" style="stop-color:#FBDA61;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#F76B1C"/>
+	</linearGradient>
+	<polygon class="st2" points="1614,437.7 691,579 691,709 1614,567.7 	"/>
+</g>
 </svg>

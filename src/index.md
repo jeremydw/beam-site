@@ -1,5 +1,6 @@
 ---
 layout: default
+body_class: body--index
 
 logos:
 - title: APEX
@@ -32,17 +33,19 @@ cards:
   name: Person 3
 ---
 <div class="hero">
-  <div class="hero__title">
-    Apache Beam: An advanced unified programming model
-  </div>
-  <div class="hero__subtitle">
-    Implement batch and streaming data processing jobs that run on any execution engine.
-  </div>
   <div class="hero__cols">
     <div class="hero__cols__col">
-      <div class="hero__ctas">
-        <a class="button button--primary">Learn</a>
-        <a class="button">Quickstart</a>
+      <div class="hero__cols__col__content">
+        <div class="hero__title">
+          Apache Beam: An advanced unified programming model
+        </div>
+        <div class="hero__subtitle">
+          Implement batch and streaming data processing jobs that run on any execution engine.
+        </div>
+        <div class="hero__ctas">
+          <a class="button button--primary">Learn more</a>
+          <a class="button">Quickstart</a>
+        </div>
       </div>
     </div>
     <div class="hero__cols__col">

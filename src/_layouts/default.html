@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body class="body">
+  <body class="body {% if page.body_class %}{{page.body_class}}{% endif %}">
     {% include header.html %}
     <div class="body__contained">
       {{ content }}
