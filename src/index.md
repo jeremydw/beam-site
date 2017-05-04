@@ -126,7 +126,7 @@ cards:
     </div>
     <div class="cards__body">
       Beam is an open source community and contributions are greatly appreciated!
-      If you’d like to contribute, please see the <a href="#TODO">Contribute</a> section.
+      If you’d like to contribute, please see the <a href="/contribute/">Contribute</a> section.
     </div>
   </div>
 </div>
@@ -136,7 +136,7 @@ cards:
     Get started
   </div>
   <div class="ctas__ctas">
-    <a class="button button--primary">Learn more</a>
-    <a class="button">Quickstart</a>
+  <a class="button button--primary" href="/get-started/beam-overview/">Learn more</a>
+  <a class="button" href="/get-started/quickstart-java/">Quickstart</a>
   </div>
 </div>
