@@ -32,7 +32,7 @@ cards:
 - quote: "Lorem ipsum dolor sit amit. Qaz qux."
   name: Person 3
 ---
-<div class="hero">
+<div class="hero section">
   <div class="hero__cols">
     <div class="hero__cols__col">
       <div class="hero__cols__col__content">
@@ -43,8 +43,8 @@ cards:
           Implement batch and streaming data processing jobs that run on any execution engine.
         </div>
         <div class="hero__ctas">
-          <a class="button button--primary">Learn more</a>
-          <a class="button">Quickstart</a>
+          <a class="button button--primary" href="/get-started/beam-overview/">Learn more</a>
+          <a class="button" href="/get-started/quickstart-java/">Quickstart</a>
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@ cards:
   </div>
 </div>
 
-<div class="pillars">
+<div class="pillars section">
   <div class="pillars__title">
     All about beam
   </div>
@@ -84,12 +84,13 @@ cards:
   </div>
 </div>
 
-<div class="graphic">
+<div class="graphic section">
 <div class="graphic__image">
+<img src="/images/beam_architecture.png">
 </div>
 </div>
 
-<div class="logos">
+<div class="logos section">
   <div class="logos__title">
     Works with
   </div>
@@ -102,38 +103,40 @@ cards:
   </div>
 </div>
 
-<div class="cards">
-  <div class="cards__title">
-    A collaborative effort
-  </div>
-  <div class="cards__cards">
-    {% for card in page.cards %}
-    <div class="cards__cards__card">
-      <div class="cards__cards__card__body">
-        {{card.quote}}
-      </div>
-      <div class="cards__cards__card__user">
-      <div class="cards__cards__card__user__icon">
-      </div>
-      <div class="cards__cards__card__user__name">
-        {{card.name}}
-      </div>
-      </div>
+<div class="cards section section--wide">
+  <div class="section__contained">
+    <div class="cards__title">
+      A collaborative effort
     </div>
-    {% endfor %}
-  </div>
-  <div class="cards__body">
-    Beam is an open source community and contributions are greatly appreciated!
-    If you’d like to contribute, please see the <a href="#TODO">Contribute</a> section.
+    <div class="cards__cards">
+      {% for card in page.cards %}
+      <div class="cards__cards__card">
+        <div class="cards__cards__card__body">
+          {{card.quote}}
+        </div>
+        <div class="cards__cards__card__user">
+          <div class="cards__cards__card__user__icon">
+          </div>
+          <div class="cards__cards__card__user__name">
+            {{card.name}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="cards__body">
+      Beam is an open source community and contributions are greatly appreciated!
+      If you’d like to contribute, please see the <a href="#TODO">Contribute</a> section.
+    </div>
   </div>
 </div>
 
-<div class="ctas">
-<div class="ctas__title">
-  Get started
-</div>
-<div class="ctas__ctas">
-  <a class="button button--primary">Learn more</a>
-  <a class="button">Quickstart</a>
-</div>
+<div class="ctas section">
+  <div class="ctas__title">
+    Get started
+  </div>
+  <div class="ctas__ctas">
+    <a class="button button--primary">Learn more</a>
+    <a class="button">Quickstart</a>
+  </div>
 </div>

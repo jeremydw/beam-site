@@ -4,6 +4,7 @@
   position: relative
   z-index: 1
   +md
+    padding-top: $pad-sm
     margin-bottom: $pad-xl
 
   .hero__content
@@ -26,9 +27,9 @@
 
   .hero__title
     +type-h1
+    color: #fff
     max-width: 500px
     margin: 0 auto $pad
-    font-weight: $font-weight-bold
     text-align: center
     +md
       margin: 0 0 $pad
@@ -36,15 +37,17 @@
 
   .hero__ctas
     text-align: center
+    margin-bottom: $pad-md
     +md
+      margin-bottom: 0
       text-align: left
 
   .hero__subtitle
     +type-h3
     color: #fff
     max-width: 540px
-    margin: 0 auto $pad-md
-    font-weight: $font-weight-bold
+    margin: 0 auto $pad
+    font-weight: $font-weight-semibold
     text-align: center
     +md
       margin: 0 0 $pad-md
@@ -53,9 +56,13 @@
   .hero__blog
     .hero__blog__title
       +type-h4
-      color: #fff
       font-weight: $font-weight-bold
-      margin-bottom: $pad/2
+      margin-bottom: $pad
+      text-align: center
+      +md
+        color: #fff
+        text-align: left
+        margin-bottom: $pad/2
 
   .hero__blog__cards
     +md
@@ -66,7 +73,7 @@
       background-color: #fff
       color: inherit
       box-shadow: $box-shadow
-      padding: $pad
+      padding: 20px
       display: block
       transition: transform 300ms ease, box-shadow 300ms ease
       position: relative
@@ -82,7 +89,7 @@
         background-size: cover
         content: ' '
         display: block
-        height: 3px
+        height: 2px
         position: absolute
         width: 100%
         left: 0
